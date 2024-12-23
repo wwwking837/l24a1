@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>
+            HTML DOM
+        </title>
+        <style>
+            body{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background-color: cadetblue;
+                margin: 0.6;
+                padding: 0;
+
+            }
+            h1{
+                color: yellow;
+                transition: all 0.5 ease;
+                /* Smooth transitions for style changes */
+            }
+            button{
+                background-color: brown;
+                color: white;
+                padding: 15px 20px;
+                border: none;
+                border-radius: 10px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1 id="heading">Hello</h1>
+            <button style="" onclick="changeText()"> punch me with the mouse cursor 
+            </button>
+            <script>
+                function changeText() {
+                    const heading = document.getElementById("heading")
+                    heading.innerHTML = "you punched the button!";
+                    heading.style.color = "purple" // change the heading color*//
+                    heading.style.fontsize = "3em"; 
+                    heading.style.textShadow = "2px 2px 5px gray";
+                    body.style.backgroundColor = "blue";
+
+                }
+            </script>
+            <script>
+                function changeText() {
+                    document.getElementById("heading").
+                    innerHTML = "You clicked the button!";
+            }
+            
+            </script>
+        </center>
+   </body>
+</html>
